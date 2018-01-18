@@ -7,3 +7,7 @@
 /build
 /captures
 .externalNativeBuild
+/app/src/androidTest
+/app/src/main/obj
+/app/src/main/libs
+/app/src/test
