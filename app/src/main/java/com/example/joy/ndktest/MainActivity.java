@@ -2,6 +2,7 @@ package com.example.joy.ndktest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         JniLoader jniLoader = new JniLoader();
-        jniLoader.getHelloString();
+        Log.e("JOY", "getHelloString = " + jniLoader.getJniHelloString() + jniLoader.initNative());
     }
 }

@@ -11,6 +11,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //autocomplete code with C/C++ start
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        //autocomplete code with C/C++ end
     }
     buildTypes {
         release {
@@ -18,6 +25,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //autocomplete code with C/C++ start
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    //autocomplete code with C/C++ end
     sourceSets {
         main {
             jniLibs.srcDir 'src/main/libs'
